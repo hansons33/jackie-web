@@ -1,0 +1,64 @@
+.header-default {
+    width: 100%;
+    height: 44px;
+    // background-color: rgb(255, 118, 47);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    z-index: 2;
+    font-size: 12px;
+    background-color: #ffffff;
+}
+.header {
+    .title-bar {
+        width: 100%;
+    }
+    .title {
+        font-size: 18px;
+        color: #ffffff;
+        text-align: center;
+        line-height: 44px;
+    }
+    .title-black {
+        font-size: 18px;
+        color: #333333;
+        text-align: center;
+        line-height: 44px;
+        max-width: 300px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .back-icon {
+        width: 45px;
+        height: 44px;
+        background: url(./images/back_icon.png) center no-repeat;
+        background-size: 28px;
+        margin-left: 12px;
+    }
+    .back-icon-black {
+        width: 45px;
+        height: 44px;
+        background: url(./images/back_black_icon.png) center no-repeat;
+        background-size: 28px;
+        margin-left: 12px;
+    }
+
+    .right-icon {
+        width: 44px;
+        height: 44px;
+        line-height: 44px;
+        background: url(./images/right_icon.png) no-repeat center center;
+        background-size: 44px;
+        margin-right: 12px;
+    }
+
+    .visible {
+        visibility: visible;
+    }
+    .hidden {
+        visibility: hidden;
+    }
+}

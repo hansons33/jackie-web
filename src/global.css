@@ -1,0 +1,119 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+        Helvetica Neue, sans-serif;
+    width: 100%;
+    height: 100%;
+    line-height: unset !important;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-overflow-scrolling: touch;
+    font-size: 12px;
+    letter-spacing: 1px;
+    overflow: hidden;
+    user-select: none;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+button,
+input,
+a,
+textarea {
+    outline: none;
+    border: none;
+    background: none;
+    text-decoration: none;
+}
+
+#root {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/*===============路由切换动画-end====================*/
+.fade-appear,
+.fade-enter {
+    opacity: 0;
+}
+
+.fade-appear-active,
+.fade-enter-active {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+}
+
+.fade-appear-done,
+.fade-enter-done {
+    opacity: 1;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit-active {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+.fade-exit-done {
+    opacity: 0;
+}
+.forward-enter {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.forward-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: ease-in 300ms;
+}
+
+.forward-exit {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.forward-exit-active {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: ease-in 300ms;
+}
+
+.back-enter {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.back-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: ease-in 300ms;
+}
+
+.back-exit {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.back-exit-active {
+    opacity: 0;
+    transform: translate(100%);
+    transition: ease-in 300ms;
+}
+
+.flex {
+    display: flex;
+}
+
+.text-align-center {
+    text-align: center;
+}

@@ -1,0 +1,8 @@
+**/node_modules/*
+**/out/*
+**/.next/*
+**/active/*
+**/public/*
+**/dist/*
+**/index.html/*
+**/src/services/http/*
